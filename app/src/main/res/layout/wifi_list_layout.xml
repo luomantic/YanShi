@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="550dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:text="请选择要发送到Led的wifi"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_height="0.5dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_send_wifi"
+        android:background="#ffffff"
+        android:layout_width="300dp"
+        android:layout_height="400dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_wait"
+        android:gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:text="正在扫描wifi请稍后..."
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_height="0.5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+        <TextView
+            android:text="密码"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:hint="请输入wifi密码"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:singleLine="true"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_send_led_cancel"
+            android:text="取消"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="#fff"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#fff"/>
+
+        <Button
+            android:id="@+id/bt_send_led"
+            android:text="发送"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="#fff"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</LinearLayout>

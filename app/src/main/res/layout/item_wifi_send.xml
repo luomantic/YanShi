@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:text="sljlsjfglsjf"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:id="@+id/tv_item_send_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</LinearLayout>
